@@ -1,5 +1,5 @@
-// [[]] chi co path: docs thi cung vao route duoc
-// []   dung chinh xac route
+// [[]] chi co path: docs thi cung vao route duoc   (chỉ mỗi docs cũng được)
+// []   dung chinh xac route (vi du: /docs/blala)
 const page = (props) => {
   const { params } = props;
 
