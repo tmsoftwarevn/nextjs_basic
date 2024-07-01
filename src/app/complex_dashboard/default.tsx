@@ -3,7 +3,7 @@ import Card from "@/component/card"
 const page = () => {
     return (
         <Card>
-            Revenue
+            complex dashboard
         </Card>
     );
 }

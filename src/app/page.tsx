@@ -12,7 +12,9 @@ export default function Home() {
         <Link href={'/about'}>About</Link>
       </div>
       {/* replace : ko cho back về trang trước, sẽ back về home */}
-      <Link href={'/product'} replace >product</Link>  
+      <Link href={'/product'}  >product</Link>  
+
+      <Link href={'/complex_dashboard'}>complex_dashboard</Link>
     </>
 
   );
