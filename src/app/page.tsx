@@ -1,20 +1,14 @@
-import Link from "next/link";
-
+import GridHome from "@/component/grid home/GridHome";
 
 export default function Home() {
   return (
     <>
-      <h1 className="text-center text-red-600 text-xl">Home</h1>
-      <div>
-        <Link href={'/blog'}>Blog</Link>
+      <div className="home">
+        <div className="container">
+          <GridHome />
+        </div>
       </div>
-      <div>
-        <Link href={'/about'}>About</Link>
-      </div>
-      {/* replace : ko cho back về trang trước, sẽ back về home */}
-      <Link href={'/product'}  >product</Link>  
 
-      <Link href={'/complex_dashboard'}>complex_dashboard</Link>
     </>
 
   );

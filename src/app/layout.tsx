@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import './globals.css'
+import Navbar from "@/component/navbar/Navbar"
 
 export const metadata:Metadata = {
   title:{
@@ -19,10 +20,7 @@ export default function RootLayout({
     <html lang="en">
 
       <body>
-        <header>
-          <div className="py-5 text-red bg-blue-600">header</div>
-          
-        </header>
+       <Navbar />
         {children}
         <footer className="py-5 bg-blue-600">
           footer
