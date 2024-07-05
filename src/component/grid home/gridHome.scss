@@ -1,0 +1,39 @@
+
+
+.grid-slide{
+    width: calc(100% - 285px);
+}
+
+.slick-prev-css{
+    width: 50px !important;
+    height: 50px !important;
+    z-index: 99;
+   
+    &::before{
+        font-size: 40px !important;
+        color: var(--color-main) !important;
+        position: absolute;
+        left: 28px;
+    }
+}
+
+.slick-next-css{
+    width: 50px !important;
+    height: 50px !important;
+    z-index: 99;
+    &::before{
+        font-size: 40px !important;
+        color: var(--color-main) !important;
+        position: absolute;
+        right: 28px;
+    }
+}
+
+.slick-dots li button:before{
+    font-size: 16px !important;
+    color: var(--color-main) !important;
+}
+
+.slick-dots{
+    bottom: 10px !important;
+}

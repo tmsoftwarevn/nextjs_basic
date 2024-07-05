@@ -27,6 +27,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/component/navbar/navbar_1"
-  ],
+, "src/component/grid home/CarouselGrid.tsx"  ],
   "exclude": ["node_modules"]
 }

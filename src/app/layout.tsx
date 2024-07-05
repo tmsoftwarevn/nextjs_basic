@@ -1,6 +1,9 @@
 import { Metadata } from "next"
 import './globals.css'
 import Navbar from "@/component/navbar/Navbar"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 export const metadata:Metadata = {
   title:{
@@ -19,12 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      <body>
+      <body >
        <Navbar />
         {children}
         <footer className="py-5 bg-blue-600">
           footer
         </footer>
+
       </body>
     </html>
   )

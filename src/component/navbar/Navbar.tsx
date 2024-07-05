@@ -8,6 +8,7 @@ const Navbar = () => {
         <>
 
             <div className="navbar py-4">
+                <div className="navbar__bg"></div>
                 <div className="container">
                     <Navbar_1 />
                     <Navbar_2 />
