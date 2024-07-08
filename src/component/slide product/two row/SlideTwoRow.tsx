@@ -1,26 +1,52 @@
 "use client";
 
-import CardProduct from "@/component/card product/CardProduct";
 import Slider from "react-slick";
+import "./slideTwoRow.scss";
+
+import CardProduct from "@/component/card product/CardProduct";
+
 
 
 let settings = {
     //dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
 };
 
+function SampleNextArrow(props: any) {
+    const { className, style, onClick } = props;
+  
+    return (
+      <div
+        className={`${className} slick-next-sale`}
+        style={{ ...style, display: "block", }}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props: any) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={`${className} slick-prev-sale`}
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      />
+    );
+  }
 
-const SlideSale = () => {
+const SlideTwoRow = () => {
     let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     return (
         <>
             <Slider {...settings}>
                 <div>
-                    <div className="grid grid-cols-5 grid-rows-2 gap-4 ">
+                    <div className="grid grid-cols-5 grid-rows-2 gap-5 ">
                         {
                             arr.map((item, idx) => {
                                 return (
@@ -34,15 +60,11 @@ const SlideSale = () => {
                 </div>
 
                 <div>
-                    <div className="grid grid-cols-5 grid-rows-2 gap-4 ">
+                    <div className="grid grid-cols-5 grid-rows-2 gap-5 ">
                         {
                             arr.map((item, idx) => {
                                 return (
-                                    <>
-                                        <div className="bg-teal-300">
-                                            sản phẩm:  {idx * 2}
-                                        </div>
-                                    </>
+                                    <CardProduct />
                                 )
                             })
                         }
@@ -55,4 +77,4 @@ const SlideSale = () => {
     );
 }
 
-export default SlideSale;
+export default SlideTwoRow;

@@ -1,0 +1,25 @@
+
+.slick-prev-sale{
+    width: 50px !important;
+    height: 50px !important;
+    z-index: 99;
+   
+    &::before{
+        font-size: 50px !important;
+        color: #333;
+        position: absolute;
+        
+    }
+}
+
+.slick-next-sale{
+    width: 50px !important;
+    height: 50px !important;
+    z-index: 99;
+    &::before{
+        font-size: 50px !important;
+        color: #333;
+        position: absolute;
+        
+    }
+}

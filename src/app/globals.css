@@ -2,12 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root{
+    --color-main: #12BDB6;
+    --color-nav-btn: #008B85;
+    --color-body: #D0EBEA;
+}
 
 .bg-second-main{
     background-color: #008B85;
 }
 
-.home{
-    background-color: #D0EBEA;
+.bg-body{
+    background-color: var(--color-body);
+}
+
+.bg-nav-btn{
+    background-color: var(--color-nav-btn);
+}
+
+.bg-main{
+    background-color: var(--color-main);
+}
+
+.color-main{
+    color: var(--color-main);
+}
+
+.color-btn-search{
+    color: #02B7AE;
+}
+.bg-btn-icon-search{
+    background-color: #8ADEDB;
 }

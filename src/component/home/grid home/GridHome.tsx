@@ -22,8 +22,8 @@ const GridHome = () => {
                     </div>
 
                     <div className="grid grid-cols-2 gap-4 h-[120px]">
-                        <div className=" col-span-1 bg-teal-300 rounded-[30px]">03</div>
-                        <div className=" col-span-1 bg-teal-300 rounded-[30px]">04</div>
+                        <div className=" col-span-1 bg-teal-300 rounded-[30px]"></div>
+                        <div className=" col-span-1 bg-teal-300 rounded-[30px]"></div>
                     </div>
                 </div>
             </div>

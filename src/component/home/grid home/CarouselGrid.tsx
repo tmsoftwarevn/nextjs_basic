@@ -42,7 +42,7 @@ const CarouselGrid = () => {
   return (
     <div className="w-[803px] h-[250px] ">
       <Slider {...settings}>
-        <div className="h-[250px] rounded-[30px] overflow-hidden">
+        <div className="h-[250px] rounded-[30px] overflow-hidden text-center">
           {/* <Image
             src={"/ttt.jpg"}
             width="0"
@@ -54,7 +54,7 @@ const CarouselGrid = () => {
           01
         </div>
 
-        <div className="h-[250px] rounded-[30px] overflow-hidden">
+        <div className="h-[250px] rounded-[30px] overflow-hidden text-center">
           {/* <Image
             src={"/ttt.jpg"}
             width="0"
@@ -65,7 +65,7 @@ const CarouselGrid = () => {
           /> */}
           02
         </div>
-        <div className="h-[250px] rounded-[30px] overflow-hidden">
+        <div className="h-[250px] rounded-[30px] overflow-hidden text-center">
           {/* <Image
             src={"/ttt.jpg"}
             width="0"
