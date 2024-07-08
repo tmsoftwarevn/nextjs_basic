@@ -4,7 +4,7 @@ const CardProduct = () => {
     return (
         <div className="card bg-white p-3 rounded-[15px]">
             <Image
-                src="/product.jpg"
+                src="./product.jpg"
                 alt="fdslj"
                 width="0"
                 height="0"

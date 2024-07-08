@@ -9,7 +9,7 @@ const Navbar_2 = () => {
     return (
         <>
             <div className="flex items-center justify-between mt-3">
-                <Image src="/logo.png" width={238} height={65} alt='nha thuoc' />
+                <Image src="./logo.png" width={238} height={65} alt='nha thuoc' />
                 <div className='md:w-[590px]'>
                     <div className='inline-flex items-center rounded-[35px] p-[10px] pl-5 w-full bg-white h-14'>
                         <input className='w-full outline-none bg-transparent placeholder:text-gray-600 placeholder:font-semibold' placeholder='Tìm tên thuốc, thực phẩm chức năng, bệnh lý...' />

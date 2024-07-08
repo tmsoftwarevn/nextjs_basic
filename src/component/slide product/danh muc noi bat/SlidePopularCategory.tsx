@@ -48,7 +48,7 @@ const SlidePopularCategory = () => {
                         <div>
                             <div className="mr-5">
                                 <Image
-                                    src={"/mypham.jpg"}
+                                    src={"./mypham.jpg"}
                                     alt="fdsfd"
                                     width="0"
                                     height="0"
