@@ -11,7 +11,7 @@ const CardForSlideOneRow = () => {
             </div>
            
             <Image
-                src="/benhtheomua.jpg"
+                src="/benhtheomua.jpg"              
                 alt="fdslj"
                 width="0"
                 height="0"
