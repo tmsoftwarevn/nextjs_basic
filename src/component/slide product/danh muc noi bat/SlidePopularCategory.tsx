@@ -45,7 +45,7 @@ const SlidePopularCategory = () => {
             <Slider {...settings}>
                 {arr.map((item, idx) => {
                     return (
-                        <div>
+                        <div key={`spc${idx}`}>
                             <div className="mr-5">
                                 <Image
                                     src={"./mypham.jpg"}

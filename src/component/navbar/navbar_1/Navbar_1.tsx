@@ -59,6 +59,7 @@ const Navbar_1 = () => {
                                 <PiMapPinFill className="mr-1 text-xl" />
                                 <div>Cửa hàng</div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>

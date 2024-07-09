@@ -64,7 +64,9 @@ const SlideTwoRow = () => {
                         {
                             arr.map((item, idx) => {
                                 return (
-                                    <CardProduct />
+                                    <div key={`str${idx}`}>
+                                        <CardProduct />
+                                    </div>    
                                 )
                             })
                         }

@@ -50,7 +50,7 @@ const SlideOneRow = () => {
                 <Slider {...settings}>
                     {arr.map((item, idx) => {
                         return (
-                            <div>
+                            <div key={`sor${idx}`}>
                                 <div className="mr-5">
                                     <CardProduct />
                                 </div>
