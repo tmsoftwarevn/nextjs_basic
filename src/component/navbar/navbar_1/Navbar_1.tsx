@@ -1,25 +1,16 @@
+import Image from "next/image";
 import { PiMapPinFill } from "react-icons/pi";
 import { TbAppsFilled } from "react-icons/tb";
 
 const Navbar_1 = () => {
     return (
         <div className="bg-blue-5 md:block md:bg-transparent">
-            {/* <div className="pb-2 umd:px-4 omd:container-lite">
+            <div className="pb-2 umd:px-4 omd:container-lite">
                 <div className="flex items-center justify-end gap-4">
                     <div className="flex w-full justify-between gap-4 ">
                         <div className="flex flex-1 items-start">
                             <span className="mr-2 flex h-4 w-4 shrink-0 text-white md:h-5 md:w-5">
-                                <img
-                                    alt=""
-                                    loading="lazy"
-                                    width="20"
-                                    height="20"
-                                    decoding="async"
-                                    data-nimg="1"
-                                    className="h-4 w-4 md:h-5 md:w-5"
-                                    style={{ color: "transparent" }}
-                                    src="https://cdn.nhathuoclongchau.com.vn/unsafe/40x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/smalls/megaphone_b8025908d5.webp"
-                                />
+                                <Image src={'/megaphone.jpg'} alt="fdsf" width={20} height={20} />
                             </span>
                             <a
                                 href="/trung-tam-tiem-chung"
@@ -31,7 +22,7 @@ const Navbar_1 = () => {
                         </div>
                         <div className="hidden items-center gap-5 md:flex text-basic">
                             <div className="inline-flex text-white font-semibold cursor-pointer items-center">
-                                <TbAppsFilled className="mr-1 text-xl"/>
+                                <TbAppsFilled className="mr-1 text-xl" />
                                 <div className="ml-1 font-medium">
                                     MiniApp
                                 </div>
@@ -59,11 +50,11 @@ const Navbar_1 = () => {
                                 <PiMapPinFill className="mr-1 text-xl" />
                                 <div>Cửa hàng</div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     );
 }

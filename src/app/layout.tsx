@@ -1,5 +1,5 @@
-import { Metadata } from "next"
-import './globals.css'
+import './globals.css';
+import { Metadata } from "next";
 import Navbar from "@/component/navbar/Navbar"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
