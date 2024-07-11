@@ -4,7 +4,7 @@ import { TbAppsFilled } from "react-icons/tb";
 const Navbar_1 = () => {
     return (
         <div className="bg-blue-5 md:block md:bg-transparent">
-            <div className="pb-2 umd:px-4 omd:container-lite">
+            {/* <div className="pb-2 umd:px-4 omd:container-lite">
                 <div className="flex items-center justify-end gap-4">
                     <div className="flex w-full justify-between gap-4 ">
                         <div className="flex flex-1 items-start">
@@ -63,7 +63,7 @@ const Navbar_1 = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
