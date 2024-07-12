@@ -3,46 +3,33 @@
 import Slider from "react-slick";
 
 import Image from "next/image";
+import { useRef } from "react";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 let settings = {
-    //dots: true,
+    arrows: false,
     infinite: false,
     speed: 500,
     slidesToShow: 7,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+   
 
 };
 
-function SampleNextArrow(props: any) {
-    const { className, style, onClick } = props;
-
-    return (
-        <div
-            className={`${className} slick-next-sale`}
-            style={{ ...style, display: "block" }}
-            onClick={onClick}
-        />
-    );
-}
-
-function SamplePrevArrow(props: any) {
-    const { className, style, onClick } = props;
-    return (
-        <div
-            className={`${className} slick-prev-sale`}
-            style={{ ...style, display: "block" }}
-            onClick={onClick}
-        />
-    );
-}
 
 const SlidePopularCategory = () => {
     let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const sliderRef = useRef<Slider>(null);
+    const next = () => {
+        sliderRef.current?.slickNext();
+    };
+    const previous = () => {
+        sliderRef.current?.slickPrev();
+    };
+
     return (
-        <>
-            <Slider {...settings}>
+        <div className="relative">
+            <Slider ref={sliderRef} {...settings}>
                 {arr.map((item, idx) => {
                     return (
                         <div key={`spc${idx}`}>
@@ -62,7 +49,18 @@ const SlidePopularCategory = () => {
                     );
                 })}
             </Slider>
-        </>
+
+            <button className="arrow-left-tr" onClick={previous}>
+                <div className="arrow-left-tr__icon">
+                    <MdKeyboardArrowLeft />
+                </div>
+            </button>
+            <button className="arrow-right-tr" onClick={next}>
+                <div className="arrow-right-tr__icon">
+                    <MdKeyboardArrowRight />
+                </div>
+            </button>
+        </div>
     );
 };
 

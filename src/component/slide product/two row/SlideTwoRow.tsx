@@ -4,47 +4,33 @@ import Slider from "react-slick";
 import "./slideTwoRow.scss";
 
 import CardProduct from "@/component/card product/CardProduct";
+import { useRef } from "react";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 
 
 let settings = {
-    //dots: true,
+    arrows: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+
 };
 
-function SampleNextArrow(props: any) {
-    const { className, style, onClick } = props;
-  
-    return (
-      <div
-        className={`${className} slick-next-sale`}
-        style={{ ...style, display: "block", }}
-        onClick={onClick}
-      />
-    );
-  }
-  
-  function SamplePrevArrow(props: any) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={`${className} slick-prev-sale`}
-        style={{ ...style, display: "block" }}
-        onClick={onClick}
-      />
-    );
-  }
 
 const SlideTwoRow = () => {
     let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const sliderRef = useRef<Slider>(null);
+    const next = () => {
+        sliderRef.current?.slickNext();
+    };
+    const previous = () => {
+        sliderRef.current?.slickPrev();
+    };
     return (
-        <>
-            <Slider {...settings}>
+        <div className="relative">
+            <Slider ref={sliderRef} {...settings}>
                 <div>
                     <div className="grid grid-cols-5 grid-rows-2 gap-5 ">
                         {
@@ -52,7 +38,7 @@ const SlideTwoRow = () => {
                                 return (
                                     <div key={`str1${idx}`}>
                                         <CardProduct />
-                                    </div>   
+                                    </div>
                                 )
                             })
                         }
@@ -66,7 +52,7 @@ const SlideTwoRow = () => {
                                 return (
                                     <div key={`str${idx}`}>
                                         <CardProduct />
-                                    </div>    
+                                    </div>
                                 )
                             })
                         }
@@ -74,8 +60,19 @@ const SlideTwoRow = () => {
                 </div>
 
             </Slider>
+            
+            <button className="arrow-left-tr" onClick={previous}>
+                <div className="arrow-left-tr__icon">
+                    <MdKeyboardArrowLeft />
+                </div>
+            </button>
+            <button className="arrow-right-tr" onClick={next}>
+                <div className="arrow-right-tr__icon">
+                    <MdKeyboardArrowRight />
+                </div>
+            </button>
 
-        </>
+        </div>
     );
 }
 

@@ -6,6 +6,7 @@
     --color-main: #12BDB6;
     --color-nav-btn: #008B85;
     --color-body: #D0EBEA;
+    --color-arrow-slide: #687575;
 }
 
 .bg-second-main{
@@ -34,3 +35,4 @@
 .bg-btn-icon-search{
     background-color: #8ADEDB;
 }
+

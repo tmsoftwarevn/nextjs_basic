@@ -1,12 +1,21 @@
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import '@fortawesome/fontawesome-free/css/all.css';
+config.autoAddCss = false;
+
+
 import './globals.css';
-import { Metadata } from "next";
-import Navbar from "@/component/navbar/Navbar"
+
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { Metadata } from "next";
+import Navbar from "@/component/navbar/Navbar"
 
-export const metadata:Metadata = {
-  title:{
+
+export const metadata: Metadata = {
+  title: {
     absolute: "",         // tiêu đề con không bị ảnh hưởng bởi template
     default: "tieu de mac dinh",
     template: "%s template"         /// tiêu đề con có thêm từ khóa
@@ -23,7 +32,7 @@ export default function RootLayout({
     <html lang="en">
 
       <body >
-       <Navbar />
+        <Navbar />
         {children}
         <footer className="py-5 bg-blue-600">
           footer

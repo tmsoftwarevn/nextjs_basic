@@ -1,39 +1,80 @@
-
-
-.grid-slide{
+.grid-slide {
     width: calc(100% - 285px);
 }
 
-.slick-prev-css{
-    width: 50px !important;
-    height: 50px !important;
-    z-index: 99;
-   
-    &::before{
-        font-size: 40px !important;
-        color: var(--color-main) !important;
-        position: absolute;
-        left: 28px;
+// .slick-prev-css {
+//     width: 50px !important;
+//     height: 50px !important;
+//     z-index: 99;
+
+//     &::before {
+//         font-size: 40px !important;
+//         color: var(--color-main) !important;
+//         position: absolute;
+//         left: 28px;
+
+//     }
+// }
+
+// .slick-next-css {
+//     width: 50px !important;
+//     height: 50px !important;
+//     z-index: 99;
+//     &::before {
+//         font-size: 40px !important;
+//         color: var(--color-main) !important;
+//         position: absolute;
+//         right: 28px;
+//     }
+// }
+
+// .slick-dots li button:before {
+//     font-size: 16px !important;
+//     color: var(--color-main) !important;
+// }
+
+// .slick-dots {
+//     bottom: 10px !important;
+// }
+
+
+// custom arrow
+
+.arrow-left{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+    &__icon{
+        font-size: 35px;
+        padding: 1px;
+        background-color: var(--color-nav-btn);
+        color: var(--color-main);
+        border-radius: 50%;
+        font-weight: 900;
+        &:hover{
+            opacity: 0.5;
+        }
     }
 }
 
-.slick-next-css{
-    width: 50px !important;
-    height: 50px !important;
-    z-index: 99;
-    &::before{
-        font-size: 40px !important;
-        color: var(--color-main) !important;
-        position: absolute;
-        right: 28px;
+// toàn cục cho all slide
+.arrow-right{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+    &__icon{
+        font-size: 35px;
+        padding: 1px;
+        background-color: var(--color-nav-btn);
+        color: var(--color-main);
+        border-radius: 50%;
+        font-weight: 900;
+        &:hover{
+            opacity: 0.5;
+        }
     }
-}
-
-.slick-dots li button:before{
-    font-size: 16px !important;
-    color: var(--color-main) !important;
-}
-
-.slick-dots{
-    bottom: 10px !important;
 }

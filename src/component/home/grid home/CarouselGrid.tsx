@@ -1,8 +1,10 @@
 "use client";
-import Slider from "react-slick";
 
+import Slider from "react-slick";
 import Image from "next/image";
 import "./gridHome.scss";
+import { useRef } from "react";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 
 function SampleNextArrow(props: any) {
@@ -29,19 +31,29 @@ function SamplePrevArrow(props: any) {
 }
 
 let settings = {
+  arrows: false,
   dots: true,
   infinite: true,
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />,
+  // nextArrow: <SampleNextArrow />,
+  // prevArrow: <SamplePrevArrow />,
 };
 
 const CarouselGrid = () => {
+  const sliderRef = useRef<Slider>(null);
+  const next = () => {
+    sliderRef.current?.slickNext();
+  };
+  const previous = () => {
+    sliderRef.current?.slickPrev();
+  };
   return (
-    <div className="w-[803px] h-[250px] ">
-      <Slider {...settings}>
+    <div className="w-[803px] h-[250px] relative">
+      <Slider
+        ref={sliderRef}
+        {...settings}>
         <div className="h-[250px] rounded-[30px] overflow-hidden text-center">
           {/* <Image
             src={"/ttt.jpg"}
@@ -76,7 +88,21 @@ const CarouselGrid = () => {
           /> */}
           03
         </div>
+
       </Slider>
+
+      <button className="arrow-left" onClick={previous}>
+        <div className="arrow-left__icon">
+          <MdKeyboardArrowLeft />
+        </div>
+      </button>
+      <button className="arrow-right" onClick={next}>
+        <div className="arrow-right__icon">
+          <MdKeyboardArrowRight />
+        </div>
+      </button>
+
+
     </div>
   );
 };
