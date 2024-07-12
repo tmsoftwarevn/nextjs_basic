@@ -4,7 +4,7 @@ import SlideOneRow from "@/component/slide product/one row/SlideOneRow";
 import TabList from "@/component/tabs/TabList";
 import { useState } from "react";
 
-const BenhTheoMua = () => {
+const SanPhamSucKhoe = () => {
     type Tab = {
         name: string;
         active: boolean;
@@ -12,15 +12,15 @@ const BenhTheoMua = () => {
 
     const [tabs, setTabs] = useState<Tab[]>([
         {
-            name: "Ngừa bệnh cảm cúm",
+            name: "Người cao tuổi",
             active: true,
         },
         {
-            name: "Ngừa ho,đau họng",
+            name: "Trẻ nhỏ/trẻ em",
             active: false,
         },
         {
-            name: "Ngừa biến cố tim mạch",
+            name: "Người bị tiểu đường",
             active: false,
         },
 
@@ -58,9 +58,9 @@ const BenhTheoMua = () => {
     return (
         <div className="mt-20">
             <h2 className="text-3xl">
-                <span className="font-bold">Bệnh theo mùa. </span><br></br>
+                <span className="font-bold">Sản phẩm theo sức khoẻ. </span><br></br>
                 <span className="text-gray-600 font-semibold">
-                    Bảo vệ sức khỏe, tăng cường đề kháng. </span>
+                Sức khỏe cho người thân trong gia đình. </span>
             </h2>
             <div className="mt-5"></div>
 
@@ -73,4 +73,4 @@ const BenhTheoMua = () => {
     );
 }
 
-export default BenhTheoMua;
+export default SanPhamSucKhoe;

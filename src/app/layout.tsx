@@ -32,11 +32,11 @@ export default function RootLayout({
     <html lang="en">
 
       <body >
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
-        <footer className="py-5 bg-blue-600">
+        {/* <footer className="py-5 bg-blue-600">
           footer
-        </footer>
+        </footer> */}
 
       </body>
     </html>
