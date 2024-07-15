@@ -9,17 +9,18 @@ import SanPhamSucKhoe from "@/component/home/san pham suc khoe/SanPhamSucKhoe";
 import SanPhamGoiY from "@/component/home/san pham goi y/SanPhamGoiY";
 import Navbar from "@/component/navbar/Navbar";
 import Footer from "@/component/footer/Footer";
+import KienThucSucKhoe from "@/component/home/kien thuc suc khoe/KienThucSucKhoe";
 
 
 
 export default function Home() {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <div className="bg-body py-5">
         <div className="container">
 
-          
+
 
           <GridHome />
           <Sale />
@@ -27,6 +28,8 @@ export default function Home() {
           <BenhTheoMua />
           <SanPhamSucKhoe />
           <SanPhamGoiY />
+          <KienThucSucKhoe />
+
 
         </div>
       </div>
